@@ -29,6 +29,21 @@ function imprimeNomes(nomes) {
         document.write(`<h3>${element}</h3>`);
     })
 }
+//mediaResponse(media)
+//imprimeNomes(nomes)
 
-mediaResponse(media)
-imprimeNomes(nomes)
+
+
+
+//Card04 -Tabuada do 8
+let tabela = document.getElementById('table')
+function tabuada(n) {
+    for(let i = 0; i <= 10; i++) {
+        let element = n * i;
+        tabela.innerHTML += `<tr><td class="primeiro">${i}</td><td class="segundo">${n} x ${i} = ${element}</td></tr>`
+    }
+}
+//tabuada(8)
+
+
+//Card05
