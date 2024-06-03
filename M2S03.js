@@ -1,5 +1,5 @@
 //Card01
-const notas = [8.0, 7.5, 6, 10.0];
+let notas1 = [8.0, 7.5, 6, 10.0];
 function calc(notas) {
     let media = 0;
 
@@ -12,7 +12,7 @@ function calc(notas) {
 
 
 //Card02
-let media = calc(notas);
+let media = calc(notas1);
 function mediaResponse(media) {
     if (media > 7) {
         document.write('<h2>Parabéns você passou na média!</h2>')
@@ -71,6 +71,31 @@ function cincoNomes() {
 }
 //cincoNomes()
 
+
+
+//Card6 - sistema de entrada de notas
+let obj = {
+    nomeMateria:'',
+    notas:[]
+}
+
+function materiaNotas(){
+    let materia = prompt("Qual o nome da matéria?");
+    obj.nomeMateria = materia;
+
+    while(obj.notas.length < 4){
+        let notas = prompt(`Digite a nota: `)
+        obj.notas.push(notas);
+    }
+
+    let media = 0;
+    obj.notas.forEach((nota) => {
+        nota = +nota;
+        media += nota;
+    })
+    return media/4;
+}
+//materiaNotas()
 
 
 
