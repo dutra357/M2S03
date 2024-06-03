@@ -110,4 +110,4 @@ function findMax(array) {
 
     return console.log(max);
 }
-findMax(meuArray)
+//findMax(meuArray)
