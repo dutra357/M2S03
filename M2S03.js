@@ -99,3 +99,15 @@ function materiaNotas(){
 
 
 
+//Card07 
+let meuArray = [1, 11, 22, 34, 67,83, 23, 2, 3, 9, 99, 14, 56]
+
+function findMax(array) {
+    let max = 0;
+    array.forEach((elemento) => {
+        if (elemento >= max) {max = elemento}
+    })
+
+    return console.log(max);
+}
+findMax(meuArray)
