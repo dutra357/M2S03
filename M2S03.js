@@ -10,4 +10,14 @@ function calc(notas) {
     return media / notas.length;
 }
 
-console.log(calc(notas))
+let media = calc(notas);
+
+function mediaResponse(media) {
+    if (media > 7) {
+        document.write('<h2>Parabéns você passou na média!</h2>')
+    } else {
+        document.write('<h2>Infelizmente você está de recuperação.</h2>')
+    } 
+}
+
+mediaResponse(media)
